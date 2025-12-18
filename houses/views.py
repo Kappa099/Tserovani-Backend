@@ -8,3 +8,4 @@ class HouseViewSet(viewsets.ModelViewSet):
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]
     search_fields = ['listing_type', 'property_type', 'location']
     ordering_fields = ['price', 'posted_at']
+
