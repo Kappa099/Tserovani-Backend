@@ -12,7 +12,7 @@ class House(models.Model):
     ]
 
     title = models.CharField(max_length=200)          # Short title for the listing
-    listing_type = models.CharField(                 # Rent or Sale
+    listing_type = models.CharField(                
         max_length=10,
         choices=LISTING_TYPE_CHOICES
     )
