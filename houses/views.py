@@ -3,6 +3,7 @@ from .models import House
 from .serializers import HouseSerializer
 
 class HouseViewSet(viewsets.ModelViewSet):
+    q
     queryset = House.objects.all()
     serializer_class = HouseSerializer
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]
